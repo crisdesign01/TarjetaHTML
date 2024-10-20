@@ -13,3 +13,126 @@ body{
     background-color: black;
     border-radius: 1em;
 }
+
+
+@font-face {
+    font-family: banner;
+    src: url(/fuente/Gilmer\ Regular.otf);
+}
+
+#segundo{
+
+
+width: 50px;
+height: 50px;
+
+
+}
+
+#tercero{
+
+    float:right;
+    
+    
+
+}
+
+
+.goku{
+
+position: relative;
+left: 25px;
+color: #fbb03b;
+font-size: 25px;
+font-family: banner;
+font-weight: bold;
+
+}
+
+.lore{
+
+text-align: center;    
+width: 300px;
+color: white;
+font-family: banner;
+display: inline-block
+
+
+
+
+
+
+}
+
+
+.tag{
+
+position: relative;
+right: 50px;
+color:white;
+font-size: 20px;
+font-family: banner;
+
+
+
+}
+
+
+.t1{
+
+  
+background-color: #fbb03b;
+position: relative;
+right: 55px;
+text-align: center;
+padding: 0px 80px;
+border-radius: 25px;
+margin: 25px;
+display: grid;
+color: white;
+font-family: banner;
+
+
+
+
+}
+
+.t2{
+
+      
+    background-color: #fbb03b;
+    position: relative;
+    right: 55px;
+    text-align: center;
+    padding: 0px 80px;
+    border-radius: 25px;
+    margin: 25px;
+    display: grid;
+    color: white;
+    font-family: banner;
+
+
+
+
+
+
+}
+
+.t3{
+
+
+      
+    background-color: #fbb03b;
+    position: relative;
+    right: 55px;
+    text-align: center;
+    padding: 0px 80px;
+    border-radius: 25px;
+    margin: 25px;
+    display: grid;
+    color: white;
+    font-family: banner;
+    
+
+
+}
