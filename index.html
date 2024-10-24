@@ -1,17 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
 
+<!-- 
+
+DISEÑO DE INTERFACES WEB GRUPO B - Tarjeta HTML, CSS y Boostrap - Diseño Digital y Multimedia
+
+Miembros del equipo:
+- Alba Leal Juan Felipe
+- Arenas Roa Miguel Arenas
+- Chaparro Acevedo David Santiago
+- Gómez Cardona Juan Felipe
+- Guasca Pedraza Cristian Manuel
+
+-->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarjeta DB SparkingZero</title>
+
+    <!-- Implementación de Boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./estilos.css">
 </head>
 
-<body>
+<!-- La clase "desktop" hacen referencia a la version responsiva para escritorio -->
+<!-- La clase "movil" es la version responsiva del código para celular-->
+<!-- Se utilizó @media para que el código muestre o oculte elementos dependiendo del tamaño de la pantalla-->
 
+<body>
+    <!-- Logo dentro de una marquilla -->
     <div class="logo">
         <div class="sparkin">
 
@@ -20,8 +39,10 @@
         </div>
     </div>
 
+    <!-- Contenedor de las tres columnas de información-->
     <div id="contenedor">
 
+        <!-- Version responsiva del TÍTULO para movil (Que aparezca el nombre de personaje primero)-->
         <responsive class="responsiva">
 
             <res class="movil">
@@ -30,24 +51,21 @@
 
         </responsive>
 
-
+        <!-- Botón Rango S-->
         <div class="primer">
-            <button class="btn btn-warning">Rango S</button>
+            <button class="btn btn btn-warning">Rango S</button>
 
             <responsive class="responsiva">
-
+                <!-- La imagen de Gokú aparece al inicio despues del botón de rango en la versión móvil-->
                 <res class="movil">
                     <img src="imagenes/gokudaima.png" alt="">
                 </res>
-
             </responsive>
 
-
-
-
+            <!-- Implementación de barras de progreso con Boostrap-->
             <h1>Estadísticas</h1>
 
-
+            <!-- Barra de Vida-->
             <barras class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75"
                 aria-valuemin="0" aria-valuemax="100">
                 <p>VIDA</p>
@@ -55,6 +73,7 @@
                     <p>500</p>
             </barras>
 
+            <!-- Barra de Ataque -->
             <barras class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="20"
                 aria-valuemin="0" aria-valuemax="100">
                 <p>ATQ</p>
@@ -62,8 +81,7 @@
                     <p>70</p>
             </barras>
 
-            </barras>
-
+            <!-- Barra de Defensa-->
             <barras class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75"
                 aria-valuemin="0" aria-valuemax="100">
                 <p>DEF</p>
@@ -71,6 +89,7 @@
                     <p>80</p>
             </barras>
 
+            <!-- Barra de Ki-->
             <barras class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75"
                 aria-valuemin="0" aria-valuemax="100">
                 <p>KI</p>
@@ -78,7 +97,7 @@
                     <p>50</p>
             </barras>
 
-            <!-- Carrusel -->
+            <!-- Carrusel de gamplay de personaje con Boostrap-->
 
             <h1>Gameplay</h1>
 
@@ -93,42 +112,52 @@
                 </section>
 
                 <section class="carousel-inner">
+
+                    <!-- Gameplay 1-->
                     <section class="carousel-item active">
 
                         <iframe width="400" height="220"
                             src="https://www.youtube.com/embed/WRetQBWkkNM?si=79wx1hC0Dwyz8WtH" frameborder="0"
                             allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
                     </section>
+
+                    <!-- Gameplay 2-->
                     <section class="carousel-item">
 
                         <iframe width="400" height="220"
                             src="https://www.youtube.com/embed/TWC8ZXgAeWw?si=ptdRTUShhZVx-BAG" frameborder="0"
                             allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
                     </section>
+
+                    <!-- Gameplay 3 -->
                     <section class="carousel-item">
 
                         <iframe width="400" height="220"
                             src="https://www.youtube.com/embed/fkScj18Ng8U?si=mwqr-V7EXJpfx2qy" frameborder="0"
                             allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
                     </section>
+
                 </section>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
                     data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
+
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
                     data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
+
             </section>
+
+
+            <!-- Columna de información de historia de Goku-->
+            <!-- Texto de historia para Móvil-->
 
             <div class="tercero">
 
@@ -159,6 +188,7 @@
                                 de lucha y su amor por sus amigos lo han impulsado a superar cualquier obstáculo.</p>
                         </article>
 
+                        <!-- Tags -->
                         <aside class="tag">
                             <h1>Tags</h1>
                         </aside>
@@ -178,13 +208,10 @@
                         </section>
                     </div>
                 </res>
-
             </div>
-
-
         </div>
 
-
+        <!-- Segunda columna dedicada para la imagen de Goku, que aparezca en el medio para la version de escritorio-->
         <div class="segundo">
 
             <res class="desktop">
@@ -193,7 +220,7 @@
 
         </div>
 
-
+        <!-- Texto de historia de Goku versión Escritorio -->
         <div class="tercero">
 
             <res class="desktop">
@@ -227,7 +254,7 @@
 
                 <footer class="tags">
                     <nav class="t1">
-                        <h2>Sayayin</h2>
+                        <h2>Sayajin</h2>
                     </nav>
                     <nav class="t1">
                         <h2>Dragon Ball: Daima</h2>
@@ -237,19 +264,12 @@
                     </nav>
                 </footer>
             </res>
-
-
-
             </section>
         </div>
-
-
-
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous"></script>
-
 </body>
 
 </html>

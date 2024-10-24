@@ -1,14 +1,11 @@
 * {
-
     padding: 0px;
     margin: 0px;
     font-family: Century Gothic;
-
-
 }
 
+/* Ajuste del logo y la marquilla del Sparking Zero */
 .logo {
-
     position: absolute;
     min-width: 160px;
     max-width: 20%;
@@ -21,26 +18,24 @@
     display: grid;
     justify-content: center;
     align-items: center;
-
 }
 
 .sparkin img {
     margin-left: 10%;
     margin-bottom: 1em;
-
 }
+
+/* Ajustes del fondo */
 
 body {
     background-image: url(./imagenes/wallpaper.jpg);
-    /**background: linear-gradient(to bottom, #333333, #c1272c);*/
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;
     background-attachment: fixed;
-
-    scrollbar-base-color: #c1272d;
 }
 
+/* Contenedor que encierra las 3 columnas */
 
 #contenedor {
     display: flex;
@@ -51,15 +46,16 @@ body {
     flex-wrap: wrap;
 }
 
+/* Ajuste de las columnas con su tamaño y responsividad */
 #contenedor div {
-
     height: 800px;
     margin: 1%;
     text-align: center;
     flex: 1;
     min-width: 400px;
-
 }
+
+/* Título de Goku(mini) de Escritorio */
 
 .titulo {
     width: 70%;
@@ -68,74 +64,67 @@ body {
     margin-bottom: -60px;
     font-size: 60px;
     color: #ff9d00;
-
-}
-
-.titulo2 {
-    width: 70%;
-    height: auto;
-
-
-    font-size: 60px;
-    color: #ffb134;
-
-}
-
-.responsiva img {
-
-    width: 70%;
-    height: auto;
-
-}
-
-.desktop img {
-
-    width: 90%;
-    height: auto;
-
-
-}
-
-.titulo2 {
-    font-weight: bolder;
 }
 
 .titulo {
     font-weight: bolder;
 }
 
+/* Título de Gokú(mini) para Móvil */
+
+.titulo2 {
+    width: 70%;
+    height: auto;
+    font-size: 60px;
+    color: #ffb134;
+}
+
+.titulo2 {
+    font-weight: bolder;
+}
+
+/* Elementos de responsividad */
+.responsiva img {
+    width: 70%;
+    height: auto;
+}
+
+.desktop img {
+    width: 90%;
+    height: auto;
+}
+
+/* Responsividad de la segunda columna*/
 @media (max-width: 900px) {
     .segundo {
         display: none;
     }
 }
 
+
+/* RESPONSIVE MÓVIL/PC DEL CÓDIGO */
+
+/* Configuración Móvil */
 @media (max-width: 900px) {
     .desktop {
         display: none;
     }
 }
 
-
+/* Configuración Escritorio */
 @media (min-width: 901px) {
-
     .movil {
         display: none;
     }
-
 }
 
+
+/* Ajustes de estética de algunos elementos como botones, carrusel, parrafos y tags */
 .progress p {
     margin: 5px;
 }
 
-
-
-
-
-
 .btn {
-
     margin-top: 130px;
     min-width: 300px;
     max-width: 400px;
@@ -144,7 +133,6 @@ body {
     color: white;
     font-weight: bold;
     background: #fbb03b;
-
 }
 
 .progress {
@@ -152,8 +140,6 @@ body {
     margin: 2%;
     margin-left: 15%;
     margin-right: 15%;
-
-
 }
 
 h1 {
@@ -166,7 +152,6 @@ h1 {
 }
 
 #carouselExampleIndicators {
-
     overflow: hidden;
     object-fit: cover;
     display: grid;
@@ -176,7 +161,6 @@ h1 {
 
 
 .lore p {
-
     color: white;
     padding: 25px;
     text-align: left;
@@ -184,9 +168,7 @@ h1 {
 }
 
 .tags {
-
     display: inline-block;
-
 }
 
 .t1 {
